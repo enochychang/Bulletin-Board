@@ -88,7 +88,6 @@ bool BBoard::login() {
     }
 
     cout << "Invalid Username or Password!" << endl << endl;
-    //
   }
 }
 
@@ -99,7 +98,6 @@ bool BBoard::login() {
 // until user chooses to quit.
 // See output samples for exact format of menu.
 void BBoard::run() {
-
   if (currentUser.getUsername() != "") {
     string action;
 
@@ -161,7 +159,6 @@ void BBoard::addMessage() {
   getline(cin, body);
   cout << endl;
   cout << "Message Recorded!" << endl;
-  //
 
   Message newMess(currentUser.getUsername(), subject, body);
   messageList.push_back(newMess);

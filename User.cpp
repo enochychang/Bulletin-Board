@@ -18,7 +18,6 @@ User::User(const string& uname, const string& pass) : username(uname), password(
 
 // returns the username
 string User::getUsername() const {
-
   return username;
 }
 
